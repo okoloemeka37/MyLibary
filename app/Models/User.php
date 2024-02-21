@@ -21,6 +21,17 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'image',
+        'role',
+        'author_description',
+        'fb_link',
+        'ig_link',
+        'twitter_link',
+        'phone',
+        'country',
+        'currency',
+        'liked_genres',
+        'liked_topics'
     ];
 
     /**
@@ -32,6 +43,14 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+    public function isAdmin()
+{
+    return $this->role === 'Admin'; 
+}
+
+public function isAuthor(){
+    return $this->role == 'Author';
+}
 
     /**
      * The attributes that should be cast.
@@ -42,4 +61,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function posts(){
+       return $this->hasMany(Posts::class);
+    }
+
+    public function books(){
+        return $this->hasMany(Books::class);
+     }
 }
