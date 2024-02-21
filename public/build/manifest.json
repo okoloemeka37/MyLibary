@@ -1,0 +1,32 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-l0sNRNKZ.js",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/Admin.js": {
+    "file": "assets/Admin-D96HXTiK.js",
+    "src": "resources/js/Admin.js",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-nlXeMU9a.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/comment&ratings.js": {
+    "file": "assets/comment_ratings-C1Q8Piv_.js",
+    "src": "resources/js/comment&ratings.js",
+    "isEntry": true
+  },
+  "resources/sass/Admin.scss": {
+    "file": "assets/Admin-CMgclWaS.css",
+    "src": "resources/sass/Admin.scss",
+    "isEntry": true
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-CHYY4q-S.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  }
+}
