@@ -1,0 +1,590 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+  header {
+    background-color: #3498db;
+    color: #fff;
+    padding:5px;
+    text-align: center;
+    display: flex;
+    padding-left: 40%;
+  }
+header h2{
+
+  font-size: 30px;
+}
+  .nav {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .nav a, form button {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px;
+    margin: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .nav a:hover, form button:hover {
+    background-color: #1a252f;
+    cursor: pointer;
+  }
+.bg{ background-color: #1a252f;}
+  section {
+    margin-left: 250px;
+    padding: 20px;
+  }
+
+  .dashboard-summary {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .summary-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .graph-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+
+  .admin-info {
+   margin-left: 5%;
+margin-top: 0px;
+
+  }
+
+  .admin-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 15%;
+    
+  }
+  .admin-info span{
+    display: block;
+  }
+
+  .invoice-section {
+    margin-top: 40px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: none;
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #3498db;
+    color: #fff;
+  }
+tr{
+  border-bottom: .4px solid rgb(192, 192, 192);
+}
+  .invoice-item-actions button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .user-actions button {
+    
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+.ws{
+  background-color: #2ecc71;
+}
+  .add-user-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Added margin at the bottom */
+  }
+  .split{
+    display: flex;
+    justify-content: space-between;
+  }
+  form button{
+    background-color:#0c69e2;
+    border: none;
+
+  }
+  .red{
+    background-color: rgb(228, 39, 39);
+  }
+
+
+  // styles for AddBook Page
+.text-danger{color: red;
+margin-bottom: 10px;}
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .vb, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+
+  .img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .fakebtn {
+   
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 93%;
+    text-align: center;
+    display: block;
+  }
+  
+  .aimg{
+    background-color: #0b9e37;
+  }
+  .abook{
+    background-color: #0c69e2;
+    margin-top: 20px;
+  }
+  .ig{
+    visibility: hidden;
+  }
+  .uploadImg{
+    width: 100px;
+    height: 100px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  }
+
+
+  .previmg div{
+    margin-bottom: 20%;
+  }
+.ip{
+  width: 40%;
+}
+  .on{
+    display: block;
+  }
+  .off{
+    display: none;
+  }
+
+
+
+
+
+
+
+  //dropdown
+.drops{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(95, 158, 240);
+  color: white;
+  cursor: pointer;
+}
+.drops:hover{
+  background-color: rgb(0, 110, 255);
+}
+
+//Books.blades page
+
+
+ 
+    .search-bar {
+      margin-bottom: 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .book-grid ,.tg {
+      display: grid;
+     grid-template-columns: auto auto auto auto ;
+      gap: 20px;
+    }
+
+    .book-entry ,.book-entry-norms {
+    
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border-radius: 5px;
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+    }
+    .blur{
+position: absolute;
+     
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 84.7%;
+      background-color: rgba(0, 0, 0, 0.493);
+      z-index: 999;
+    }
+   
+    .blur p{
+      padding-top: 50%;
+      padding-left: 10%;
+      font-size: 20px;
+      font-style: italic;
+      color: white;
+    }
+
+    .book-entry:hover,.book-entry-norms:hover {
+      transform: scale(1.05);
+    }
+
+    .book-info {
+      padding:5px 20px 20px 20px;
+    }
+
+    .book-info h3 {
+      margin: 0 0 5px;
+      font-size: 1.2em;
+      color: #2c3e50;
+    }
+
+    .book-info p {
+      margin-bottom: 20%;
+      font-size: 0.9em;
+      color: #7f8c8d;
+    }
+
+    .book-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .book-buttons ,.nice-buttons {
+      position: absolute;
+    margin-top: 30%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #3498db;
+      padding: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .book-buttons button ,.restore-norms ,.delete {
+      background-color: #fff;
+      color: #3498db;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .book-buttons .edit:hover {
+      background-color: #262727;
+      color: #fff;
+    }
+
+    .book-buttons .delete:hover {
+      background-color: #bb2b2b;
+      color: #fff;
+    }
+    .nice-buttons .delete:hover{
+      background-color: #bb2b2b;
+      color: #fff;
+    }
+    .nice-buttons .restore-norms:hover{
+      background-color: #34db95;
+      color: #ffffff;
+     
+    }
+    .delete-norms{
+      background-color: #fff;
+      color: #3498db;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+ margin-left:30%;
+    }
+.delete-norms:hover{
+  background-color: #bb2b2b;
+  color: #fff; 
+}
+    
+    .view-more-button {
+      width:30%;
+      padding: 12px;
+      color: #000000;
+      border: 1px solid  #3498db;;
+      border-radius: 35px;
+      cursor: pointer;
+      font-size: 1.1em;
+      margin-left: 35%;
+      margin-top: 5%;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .view-more-button:hover {
+      background-color:  #3498db;;
+      color: white;
+    }
+    
+    .genre{
+      font-size: 13px;
+    }
+
+    .alert,.alert2{
+      border-radius: 5px;
+      padding: 10px 15px;
+      color: white;
+      animation: suc 2s ease 1s;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    }
+    .alert-success{
+      background-color: rgb(37, 97, 224);
+    }
+    @keyframes suc {
+     10%{
+        opacity: 1;
+      }
+      50%{
+        opacity: 0;
+       
+      }
+      100%{
+       
+      }
+    }
+
+    //still Books.blade.php
+    // users post styles;
+
+    .set{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 70px;
+    }
+    .df{
+      display: flex;
+      justify-content: flex-end;
+      
+      margin-bottom: 30px;
+  }
+
+
+  
+   .tf{
+      width: fit-content;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 20px;
+      border: 1px solid  #3498db;;
+  font-size: 15px;
+      margin-left: 10px;
+      text-align: center;
+      transition: background-color 1s;
+  }
+  .tf:hover{
+      background-color:  #3498db;
+   
+  } 
+
+  .now{
+    background-color:  #3498db;
+  }
+  #popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#popup-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#popup-container button {
+    background-color:red ;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+#popup-container button.cancel {
+    background-color: #4caf50;
+    margin-right: 10px;
+}
+
+//notification page style
+
+
+   
+
+.notification {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.notification:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification h3 {
+  margin-top: 0;
+}
+
+.notification p {
+  margin: 0;
+  color: #555;
+}
+
+.notification .date {
+  color: #272727;
+  font-size: 0.9em;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+}
+.blue{
+  background-color: rgb(37, 137, 231);
+}
+
+
+//report section
+
+
+.report-section {
+  margin-bottom: 20px;
+}
+
+.report-list {
+  list-style: none;
+  padding: 0;
+}
+
+.report-item {
+  border: 1px solid #bdd7e2; /* Lighter Blue */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.report-details {
+  margin-bottom: 10px;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reason, .date {
+  color: #555;
+}
+
+//Post Page
+
+//author post page
+.etc{
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+margin-right: 20%;
+}
