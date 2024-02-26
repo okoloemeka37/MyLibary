@@ -55,7 +55,14 @@ Route::get("/bos/{id}",[MailController::class,'sendDownloadMail'])->name('sdm');
 
 
 
-Route::get('/',[IndexPageController::class,'index'])->name("home");
+//Route::get('/',[IndexPageController::class,'index'])->name("home");
+
+ Route::get('/',function(){
+        return view('Auths.login');
+    })->name('login');
+
+
+
 Route::get('/sort{genre}',[IndexPageController::class,'index'])->name("gen");
 
 
